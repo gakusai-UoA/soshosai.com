@@ -1,3 +1,9 @@
+/*
+このスクリプトのために書きかえたファイル
+package.json
+.gitignore
+*/
+
 import fs from 'node:fs/promises';
 
 const astroOrStorybook = process.argv[2];
