@@ -1,0 +1,47 @@
+.about {
+    margin: 60px auto 0 auto;
+    padding-right: 80px;
+    position: relative;
+    width: 80%;
+
+    & img {
+        width: 130px;
+        aspect-ratio: 3 / 2;
+        border-radius: 6px;
+        border: 3px solid #43B8BA;
+        position: absolute;
+        top: -40px;
+        right: 0;
+        z-index: 10;
+        rotate: -7deg;
+    }
+}
+
+.aboutBox {
+    border: 3px solid #43B8BA;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    position: relative;
+    box-shadow: 30px 30px 0 rgba(247, 221, 119, 0.85);
+
+    & h1 {
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin: 14px 0 14px 14px;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 100%;
+            background: linear-gradient(to right, #43B8BA 70%, white 80%);
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    & p {
+        margin: 14px;
+    }
+}
