@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 9999px;
+    height: 8vh;
+    width: 95vw;
+    margin: 0.5vw auto;
+    position: absolute;
+    z-index: 100;
+    inset: 0;
+}
+
+@keyframes pico {
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 0.9;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1vh;
+
+    & a {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo_img {
+        width: 6vh;
+        aspect-ratio: 1;
+    }
+
+    .logo_text {
+        height: 3vh;
+    }
+
+    &:hover {
+        animation: pico 0.4s;
+    }
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5vh;
+}
+
+.drawer {
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    translate: 200% 0;
+    background-color: rgba(62, 166, 167, 0.90);
+    transition: 0.7s;
+    z-index: 0;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (min-width: 870px) {
+    .header {
+        padding: 0 1.5vw;
+        height: 6vw;
+        margin: 0 1vw;
+        border-radius: 0 0 1vw 1vw;
+    }
+
+    @keyframes picopico {
+        from {
+            scale: 1;
+        }
+
+        25% {
+            scale: 0.9;
+        }
+
+        50% {
+            scale: 1;
+        }
+
+        75% {
+            scale: 0.9;
+        }
+
+        to {
+            scale: 1;
+        }
+    }
+
+    .logo {
+        margin: 0;
+
+        &:hover {
+            animation: picopico 0.7s;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

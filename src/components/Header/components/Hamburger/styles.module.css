@@ -1,0 +1,41 @@
+.button {
+    all: unset;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 6vh;
+    width: 6vh;
+
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.on,
+.off {
+    grid-area: 1 / 1;
+    transition: opacity, scale 0.2s;
+}
+
+.on {
+    opacity: 1;
+    scale: 1;
+}
+
+.off {
+    opacity: 0;
+    scale: 0;
+}
+
+.button[aria-expanded="true"] {
+    .on {
+        opacity: 0;
+        scale: 0;
+    }
+
+    .off {
+        opacity: 1;
+        scale: 1;
+    }
+}
