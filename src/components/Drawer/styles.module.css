@@ -1,0 +1,85 @@
+.menu {
+    background-color: rgba(62, 166, 167, 0.90);
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 85vh;
+    padding-top: 15vh;
+    transition: 0.5s;
+    font-size: 3vh;
+    translate: 0;
+}
+
+.menu[aria-hidden="true"] {
+    translate: 100% 0;
+}
+
+.menuBox {
+    margin-left: 7vw;
+    padding-top: 6vw;
+    padding-bottom: 9vw;
+    padding-left: 6vw;
+    background-color: rgb(247, 221, 119);
+    box-shadow: 6vw 4vw rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-flow: column;
+
+    & a {
+        all: unset;
+        width: fit-content;
+        margin-bottom: 3vw;
+        border-bottom: 2px dotted #444;
+    }
+}
+
+.bar {
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+    border-bottom: 2px solid #444;
+    font-size: 2vh;
+}
+
+.snslinkBox {
+    background-color: rgb(247, 221, 119);
+    box-shadow: 2vw 2vw rgba(0, 0, 0, 0.7);
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    margin: 10vw auto;
+
+
+    & li,
+    & ul {
+        all: unset;
+    }
+
+    & ul {
+        display: flex;
+    }
+
+    & a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 6px;
+    }
+}
+
+.x,
+.insta {
+    width: 6vw;
+    aspect-ratio: 1;
+    padding: 6px;
+}
+
+.x {
+    background-color: black;
+}
+
+.insta {
+    background-color: purple;
+}
