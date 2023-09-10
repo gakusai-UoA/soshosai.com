@@ -1,0 +1,89 @@
+.event {
+    position: relative;
+    width: 500px;
+    aspect-ratio: 1;
+
+    & img {
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+    }
+}
+
+.info {
+    overflow: hidden;
+    position: relative;
+
+    &[data-type="plain"] {
+        top: 2.5%;
+        left: 2.5%;
+        width: 90%;
+        height: 90%;
+    }
+
+    &[data-type="stage"] {
+        &:before {
+            content: '';
+            display: block;
+            float: left;
+            height: 10%;
+            width: 50%;
+        }
+
+        top: 30%;
+        left: 12%;
+        width: 75%;
+        height: 58%;
+    }
+
+    &[data-type="shop"] {
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 58%;
+    }
+
+    &[data-type="company"] {
+        top: 22.5%;
+        left: 10%;
+        width: 80%;
+        height: 65%;
+    }
+
+    &[data-type="exhibit"] {
+        &:before {
+            content: '';
+            display: block;
+            float: right;
+            height: 15%;
+            width: 45%;
+        }
+
+        top: 10%;
+        left: 10%;
+        width: 68%;
+        height: 78%;
+    }
+
+    &[data-type="kids"] {
+        &:before {
+            content: '';
+            display: block;
+            float: left;
+            height: 25%;
+            width: 35%;
+        }
+
+        top: 20%;
+        left: 10%;
+        width: 80%;
+        height: 68%;
+    }
+
+    &[data-type="gakusaiEvents"] {
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 65%;
+    }
+}
