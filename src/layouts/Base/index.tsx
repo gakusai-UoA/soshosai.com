@@ -18,7 +18,9 @@ const Base = ({ children }: Props) => {
                 </div>
                 <Drawer opened={opened} />
             </TopView>
-            {children}
+            <div className={styles.main}>
+                {children}
+            </div>
             <Footer></Footer>
         </div>
     );
