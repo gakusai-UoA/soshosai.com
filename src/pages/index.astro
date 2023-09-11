@@ -1,4 +1,15 @@
 ---
+import Base from "../layouts/Base";
+
+import About from "../components/About";
+import Theme from "../components/Theme";
+import GuestList from "../components/GuestList";
+import Guest from "../components/Guest";
+import Map from "../components/Map";
+import EventList from "../components/EventList";
+import EventCard from "../components/EventList/components/EventCard";
+import PamphletButton from "../components/PamphletButton";
+import Sns from "../components/Sns";
 ---
 
 <html lang="en">
@@ -10,6 +21,28 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+	<Base client:load>
+		<About></About>
+		<Theme></Theme>
+		<GuestList>
+			<Guest name="hogehoge">
+				hogehoge hogehoge
+			</Guest>
+			<Guest name="hogehoge">
+				hogehoge hogehoge
+			</Guest>
+		</GuestList>
+		<Map></Map>	
+		<EventList>
+                <EventCard type="stage">A</EventCard>
+                <EventCard type="shop">B</EventCard>
+                <EventCard type="company">C</EventCard>
+                <EventCard type="exhibit">D</EventCard>
+                <EventCard type="kids">E</EventCard>
+                <EventCard type="gakusaiEvents">F</EventCard>
+		</EventList>
+		<PamphletButton invalid={false} link="#"></PamphletButton>
+		<Sns></Sns>
+	</Base>
 	</body>
 </html>
