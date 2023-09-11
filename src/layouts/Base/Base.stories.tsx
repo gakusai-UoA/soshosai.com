@@ -9,6 +9,6 @@ export default meta;
 
 export const Default = {
     args: {
-        children: "",
+        children: <div style={{ height: '100vh' }}>100vhの高さのdiv</div>,
     }
 };

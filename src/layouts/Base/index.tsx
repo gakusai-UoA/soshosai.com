@@ -3,6 +3,7 @@ import Drawer from "../../components/Drawer";
 import Header from "../../components/Header";
 import styles from "./styles.module.css";
 import TopView from "../../components/TopView";
+import Footer from "../../components/Footer";
 
 type Props = { children: React.ReactNode };
 
@@ -12,10 +13,13 @@ const Base = ({ children }: Props) => {
     return (
         <div className={styles.body} data-unscrollable={opened}>
             <TopView>
-                <Header onClick={() => toggle()} />
+                <div className={styles.header}>
+                    <Header onClick={() => toggle()} />
+                </div>
                 <Drawer opened={opened} />
             </TopView>
             {children}
+            <Footer></Footer>
         </div>
     );
 };
