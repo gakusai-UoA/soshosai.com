@@ -1,0 +1,22 @@
+.guest {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+
+    & img {
+        width: 50%;
+    }
+
+    & .text {
+        width: 50%;
+
+        & h1 {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        & div {
+            font-size: 0.8rem;
+        }
+    }
+}
