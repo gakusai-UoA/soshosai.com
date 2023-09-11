@@ -1,5 +1,5 @@
 .eventList {
-    position: absolute;
+    position: relative;
     margin: 5% 0;
     width: 100%;
     display: flex;
