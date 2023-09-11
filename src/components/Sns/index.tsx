@@ -2,7 +2,7 @@ import styles from './styles.module.css';
 import follow_us from './images/follow_us.svg';
 import message from './images/message.svg';
 import x from './images/x_icon.svg';
-import insta from './images/insta-icon.svg';
+import insta from './images/insta_icon.svg';
 
 const Sns = () => {
     return (
