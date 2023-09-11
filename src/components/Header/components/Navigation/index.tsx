@@ -11,7 +11,7 @@ const Navigation = () => {
                     <a href="#events">開催イベント</a>
                 </div>
                 <div>
-                    <a href="/kforVisitor">ご来場の方へ</a>
+                    <a href="/forVisitor">ご来場の方へ</a>
                 </div>
                 <div>
                     <a href="/sponsor">ご協賛</a>
