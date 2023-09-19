@@ -1,0 +1,43 @@
+---
+import Base from "../layouts/Base";
+
+import Title from '../components/Title';
+import Info from '../components/Info';
+import SponsorList from '../components/SponsorList';
+import SponsorCard from '../components/SponsorCard';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+	<Base client:load>
+		<div style="height: 10vh;" />
+		<div style="width: 100%;">
+			<Title>協賛企業紹介</Title>
+		</div>
+		<Info>
+            会津大学学園祭 蒼翔祭に
+            ご協賛いただいている企業を紹介いたします。
+            蒼翔祭開催に向けてご協力・ご支援をいただき、
+            誠にありがとうございます。
+		</Info>
+        <SponsorList>
+            <SponsorCard name="企業名"/>
+            <SponsorCard name="企業名"/>
+            <SponsorCard name="企業名"/>
+            <SponsorCard name="企業名"/>
+            <SponsorCard name="企業名"/>
+            <SponsorCard name="企業名"/>
+            <SponsorCard name="企業名"/>
+            <SponsorCard name="企業名"/>
+            <SponsorCard name="企業名"/>
+        </SponsorList>
+	</Base>
+	</body>
+</html>

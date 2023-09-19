@@ -6,6 +6,7 @@
     row-gap: 10px;
     text-decoration: none;
     color: #4C4C4C;
+    margin: 10px 0;
 
     & img {
         width: 100%;
