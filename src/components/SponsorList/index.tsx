@@ -1,9 +1,8 @@
-import { escapeHTML } from 'astro/runtime/server/escape.js';
 import styles from './styles.module.css';
 
 type Props = { children: React.ReactNode };
 
-const SponserList = ({ children }: Props) => {
+const SponsorList = ({ children }: Props) => {
     return (
         <div>
             <div className={styles.center}>
@@ -16,4 +15,4 @@ const SponserList = ({ children }: Props) => {
     );
 };
 
-export default SponserList;
+export default SponsorList;

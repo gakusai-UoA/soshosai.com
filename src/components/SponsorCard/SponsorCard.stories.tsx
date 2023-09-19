@@ -1,8 +1,8 @@
 import type { Meta } from '@storybook/react';
-import SponserCard from '.';
+import SponsorCard from '.';
 
-const meta: Meta<typeof SponserCard> = {
-    component: SponserCard,
+const meta: Meta<typeof SponsorCard> = {
+    component: SponsorCard,
 }
 
 export default meta;

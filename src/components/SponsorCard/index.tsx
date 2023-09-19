@@ -7,7 +7,7 @@ type Props = {
     link?: string,
 };
 
-const SponserCard = ({ img, name, link }: Props) => {
+const SponsorCard = ({ img, name, link }: Props) => {
     return (
         <a href={link} data-valid={!(link == null)} className={styles.card}>
             <div className={styles.image}>
@@ -18,4 +18,4 @@ const SponserCard = ({ img, name, link }: Props) => {
     );
 };
 
-export default SponserCard;
+export default SponsorCard;
