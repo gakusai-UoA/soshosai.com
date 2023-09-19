@@ -1,0 +1,17 @@
+.title {
+    font-size: 1.3rem;
+    position: relative;
+    overflow-x: hidden;
+    margin: 10px 0;
+
+    &::after {
+        content: '';
+        background-color: black;
+        display: inline-block;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        margin-left: 10px;
+    }
+}
