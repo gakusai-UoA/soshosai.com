@@ -1,5 +1,6 @@
 import type { Meta } from '@storybook/react';
 import Base from '.';
+import TopView from '../../components/TopView';
 
 const meta: Meta<typeof Base> = {
     component: Base,
