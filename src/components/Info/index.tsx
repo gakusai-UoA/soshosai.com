@@ -3,7 +3,7 @@ type Props = { children: string };
 
 const Info = ({ children }: Props) => {
     return (
-        <div className={styles.title}>{children}</div>
+        <div className={styles.info}>{children}</div>
     );
 };
 
