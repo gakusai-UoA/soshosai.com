@@ -1,12 +1,8 @@
 import styles from "./styles.module.css";
 
-type Props = { children: React.ReactNode };
-
-const TopView = ({ children }: Props) => {
+const TopView = () => {
     return (
-        <div className={styles.top}>
-            {children}
-        </div>
+        <div className={styles.top} />
     );
 };
 
