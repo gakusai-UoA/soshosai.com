@@ -1,0 +1,10 @@
+.images {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-evenly;
+
+    & img {
+        width: min(25%, 100px);
+    }
+}
