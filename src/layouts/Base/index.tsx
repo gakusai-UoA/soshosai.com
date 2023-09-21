@@ -7,7 +7,7 @@ type Props = {
 
 const Base = ({ children }: Props) => {
     return (
-        <div className={styles.body}>
+        <div>
             <div className={styles.main}>
                 {children}
             </div>

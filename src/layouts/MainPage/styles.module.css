@@ -2,13 +2,6 @@ body {
     margin: 0;
 }
 
-.body {
-    position: relative;
-    width: 100dvw;
-    top: 0;
-    left: 0;
-}
-
 .main {
     display: flex;
     flex-direction: column;
