@@ -18,9 +18,11 @@
 
 .message {
     grid-area: 3 / 1 / 5 / 2;
-    transform: skewY(-6deg);
+    transform: skewY(-6deg) rotate(6deg);
     width: 60%;
     margin-bottom: 10%;
+    color: white;
+    font-size: 1.2rem;
 }
 
 .links {

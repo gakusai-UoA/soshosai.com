@@ -8,7 +8,11 @@ const Sns = () => {
     return (
         <div className={styles.sns}>
             <img src={follow_us.src} className={styles.followUs}></img>
-            <img src={message.src} className={styles.message}></img>
+            <div className={styles.message}>
+                活動の様子や<br />
+                学園祭の情報を<br />
+                発信しています！
+            </div>
             <div className={styles.links}>
                 <a href="https://x.com/soshosai" className={styles.x}>
                     <img src={x.src}></img>
