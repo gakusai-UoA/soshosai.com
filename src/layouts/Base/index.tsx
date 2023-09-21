@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Drawer from "../../components/Drawer";
-import Header from "../../components/Header";
 import styles from "./styles.module.css";
 import Footer from "../../components/Footer";
 
@@ -9,14 +7,8 @@ type Props = {
 };
 
 const Base = ({ children }: Props) => {
-    const [opened, setOpened] = useState(false);
-    const toggle = () => setOpened(!opened);
     return (
-        <div className={styles.body} data-unscrollable={opened}>
-            <div className={styles.header}>
-                <Header onClick={() => toggle()} />
-            </div>
-            <Drawer opened={opened} />
+        <div className={styles.body}>
             <div className={styles.main}>
                 {children}
             </div>
