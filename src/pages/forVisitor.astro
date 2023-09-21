@@ -5,6 +5,7 @@ import Title from '../components/Title';
 import Info from '../components/Info';
 import Section from '../components/Section';
 import AttensionImage from '../components/AttensionImage';
+import HeaderDrawer from '../components/HeaderDrawer';
 ---
 
 <html lang="en">
@@ -16,7 +17,8 @@ import AttensionImage from '../components/AttensionImage';
 		<title>Astro</title>
 	</head>
 	<body>
-	<Base client:load>
+	<Base>
+		<HeaderDrawer client:load/>
 		<div style="height: 10vh;" />
 		<div style="width: 100%;">
 			<Title>ご来場の方へ</Title>
