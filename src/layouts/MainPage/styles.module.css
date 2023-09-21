@@ -18,8 +18,13 @@ body {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 880px) {
+    .wrapper {
+        margin: -90vh auto 0 calc(26vw + 1vh);
+
+    }
+
     .main {
-        width: 800px;
+        width: min(880px, 80%);
     }
 }

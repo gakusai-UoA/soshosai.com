@@ -6,9 +6,9 @@ const SideMenu = () => {
 
     useEffect(() => {
         tocbot.init({
-            tocSelector: '.toc',
-            contentSelector: '.toc_contents',
-            headingSelector: '.toc_anchor',
+            tocSelector: '.' + styles.toc,
+            contentSelector: '.' + styles.contents,
+            headingSelector: '.' + styles.anchor,
             headingsOffset: 200,
             scrollSmoothOffset: -100,
             listClass: styles.tocList,
@@ -21,14 +21,14 @@ const SideMenu = () => {
     }, []);
 
     return (
-        <nav className={`toc ${styles.sideMenu}`} />
+        <nav className={styles.toc} />
     );
 };
 
 type AnchorProps = { id: string, name: string, };
 const Anchor = ({ id, name }: AnchorProps) => {
     return (
-        <div id={id} className={`toc_anchor ${styles.anchor}`}>{name}</div>
+        <div id={id} className={styles.anchor}>{name}</div>
     );
 };
 
@@ -36,7 +36,7 @@ type ContentsProps = { children: React.ReactNode };
 
 const Contents = ({ children }: ContentsProps) => {
     return (
-        <div className={`toc_contents ${styles.contents}`}>
+        <div className={styles.contents}>
             {children}
         </div>
     );

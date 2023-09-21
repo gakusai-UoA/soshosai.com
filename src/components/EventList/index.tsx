@@ -7,8 +7,7 @@ type Props = {
 
 const EventList = ({ children }: Props) => {
     return (
-        /* id使っても大丈夫？ */
-        <div id="events" className={styles.eventList}>
+        <div className={styles.eventList}>
             <h1>開催イベント</h1>
             <div className={styles.cards}>
                 {children}

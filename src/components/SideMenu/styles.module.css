@@ -7,15 +7,22 @@
     display: contents;
 }
 
-.sideMenu {
+.toc {
     margin: 1vh;
     position: sticky;
-    top: 9vh;
+    top: calc(6vw + 1vh);
     left: 1vh;
-    height: 90vh;
+    height: calc(98vh - 6vw);
     width: 26vw;
     background-color: #3EA6A7;
     border-radius: 30px;
+    display: none;
+}
+
+@media screen and (min-width: 880px) {
+    .toc {
+        display: block;
+    }
 }
 
 .tocList {
