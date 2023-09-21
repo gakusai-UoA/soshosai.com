@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <ul className={styles.nav}>
-                <li><a href="/forVisiter">ご来場の方へ</a></li>
+                <li><a href="/forVisitor">ご来場の方へ</a></li>
                 <li><a href="/aboutSponsor">ご協賛に関して</a></li>
                 <li><a href="#">お問い合わせForm</a></li>
                 <li><a href="/sponsor">協賛企業様紹介</a></li>
