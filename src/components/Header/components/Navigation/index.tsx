@@ -8,7 +8,7 @@ const Navigation = () => {
                     <a href="/">TOP</a>
                 </div>
                 <div>
-                    <a href="#events">開催イベント</a>
+                    <a href="/#events">開催イベント</a>
                 </div>
                 <div>
                     <a href="/forVisitor">ご来場の方へ</a>
