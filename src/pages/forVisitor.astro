@@ -1,0 +1,79 @@
+---
+import Base from "../layouts/Base";
+
+import Title from '../components/Title';
+import Info from '../components/Info';
+import Section from '../components/Section';
+import AttensionImage from '../components/AttensionImage';
+import HeaderDrawer from '../components/HeaderDrawer';
+
+import '../common.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+	<Base>
+		<HeaderDrawer client:load/>
+		<div style="height: 10vh;" />
+		<div style="width: 100%;">
+			<Title>ご来場の方へ</Title>
+		</div>
+		<Info>
+			この度は、蒼翔祭ホームページを閲覧いただきありがとうございます。
+			当学園祭へ来場される方へ、開催期間中の大学構内の利用について注意･お願いがございます。
+		</Info>
+		<Section title="会場内注意">
+			<AttensionImage />
+            <ul>
+                <li>構内は全面禁煙となっております。</li>
+                <li>衛生面の都合上、ペット同伴はお断りさせていただきます。</li>
+                <li>
+					ゴミは分別の上、ゴミ箱へお願いいたします。
+					<br />
+					※リサイクルにご協力ください。
+				</li>
+                <li>他の来場者様や参加学生への迷惑となる行為はお控えください。</li>
+                <li>小さいお子様連れのお客様は、お子様から目を離されませんようにお願いいたします。</li>
+                <li>迷子の対応に関しては、学園祭本部テントまでお願いいたします。</li>
+                <li>会場内での、窃盗等の責任は一切負いかねます。</li>
+            </ul>
+		</Section>
+		<Section title="写真撮影に関して">
+			<ul>
+			<li>
+				学園祭の様子等を学園祭スタッフが撮影している場合があります。
+				撮影した写真は、SNS等に掲載や投稿、その後の資料に活用する可能性がございますので、ご了承ください。
+			</li>
+			<li>
+				学園祭スタッフの許可がある場合を除いて、蒼翔祭における団体名義での写真撮影及び写真利用は、一切禁止しておりますのでご了承ください。
+				<br />
+				（一個人で収まる利用を目的とした撮影は問題ありません。）
+			</li>
+			<li>
+				団体様等が写真撮影を希望する場合は、事前に申請･お問い合わせ下さい。
+			</li>
+			<li>
+				事前に写真撮影の申請をしていない団体様が写真撮影を希望する場合は、本部テントまで直接お問い合わせ下さい。
+			</li>
+		</ul>
+		</Section>
+		<Section title="緊急時の対応に関して">
+			<ul>
+				<li>
+					万が一、火災や地震などが発生した場合は大学公園に避難するようにしてください。
+				</li>
+				<li>
+					避難の際は、慌てず、学園祭スタッフの指示に従ってください。
+				</li>
+			</ul>
+		</Section>
+	</Base>
+	</body>
+</html>

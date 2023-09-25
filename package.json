@@ -3,13 +3,13 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "dev": "node config_util.js astro & astro dev",
+    "start": "node config_util.js astro & astro dev",
+    "build": "node config_util.js astro & astro build",
+    "preview": "node config_util.js astro & astro preview",
+    "astro": "node config_util.js astro & astro",
+    "storybook": "node config_util.js storybook & storybook dev -p 6006",
+    "build-storybook": "node config_util.js storybook & storybook build"
   },
   "dependencies": {
     "@astrojs/react": "^3.0.0",
@@ -17,7 +17,8 @@
     "@types/react-dom": "^18.2.7",
     "astro": "^3.0.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tocbot": "^4.21.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.0",
@@ -28,6 +29,7 @@
     "@storybook/react": "^7.4.0",
     "@storybook/react-vite": "^7.4.0",
     "@storybook/testing-library": "^0.2.0",
+    "postcss-nesting": "^12.0.1",
     "prop-types": "^15.8.1",
     "storybook": "^7.4.0"
   }

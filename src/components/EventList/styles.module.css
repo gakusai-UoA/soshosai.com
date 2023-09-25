@@ -1,0 +1,55 @@
+.eventList {
+    position: relative;
+    margin: 5% 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 10vh;
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -10;
+        background-color: #FFA490;
+        transform: skewY(-6deg);
+    }
+
+    & h1 {
+        margin: 0;
+        color: #FFF;
+        text-shadow: 2px 4px 0px #43B8BA;
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        -webkit-text-stroke: 1px #43B8BA;
+        rotate: -6deg;
+    }
+}
+
+.cards {
+    width: 98%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    transform: skewY(-6deg);
+
+    &>* {
+        scroll-snap-align: center;
+        height: 300px;
+        transform: skewY(6deg);
+        rotate: -6deg;
+
+        &:first-child {
+            margin-left: 100%;
+        }
+
+        &:last-child {
+            margin-right: 100%;
+        }
+    }
+}

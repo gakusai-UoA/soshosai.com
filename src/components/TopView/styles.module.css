@@ -1,0 +1,14 @@
+.top {
+    background-image: url(./images/topImage.jpg);
+    background-size: cover;
+    background-position: bottom left;
+    height: 60vh;
+    border-radius: 0px 0px 15px 15px;
+}
+
+@media screen and (min-width: 870px) {
+    .top {
+        height: 100vh;
+        border-radius: 0;
+    }
+}

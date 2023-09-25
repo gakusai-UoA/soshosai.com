@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 880px) {
+    .wrapper {
+        margin: -90vh auto 0 calc(26vw + 1vh);
+
+    }
+
+    .main {
+        width: min(880px, 80%);
+    }
+}

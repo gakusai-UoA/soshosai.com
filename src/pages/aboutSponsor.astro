@@ -1,0 +1,61 @@
+---
+import Base from "../layouts/Base";
+
+import Title from '../components/Title';
+import Info from '../components/Info';
+import Section from '../components/Section';
+import Button from '../components/Button';
+import HeaderDrawer from '../components/HeaderDrawer';
+
+import '../common.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+	<Base>
+		<HeaderDrawer client:load/>
+		<div style="height: 10vh;" />
+		<div style="width: 100%;">
+			<Title>ご協賛に関して</Title>
+		</div>
+		<Info>
+            会津大学学園祭 蒼翔祭は、
+            協賛してくださる企業を募っています。
+		</Info>
+        <Section title="協賛の主旨">
+            こちらは会津大学学園祭「蒼翔祭」にご協賛・ご寄付いただける企業様、会津地区の法人や団体の方のためのページになります。
+            学園祭の運営のためにご協賛・ご寄付を検討いただけますと幸いです。
+        </Section>
+        <Section title="協賛形態について">
+            <ol>
+                <li>公式パンフレット広告掲載</li>
+                <li>公式Webサイトへの広告掲載</li>
+                <li>学園祭参加団体への物品の提供</li>
+            </ol>
+            <div style="text-align: center;">
+                詳しくは下記の資料をご参照ください。
+                <br />
+                <Button link="#">協賛資料を参照</Button>
+            </div>
+        </Section>
+        <Section title="お問い合わせ">
+            協賛等に関するお問い合わせは、こちらのメールや電話、またはお問い合わせFormへお願いいたします。
+            <div style="text-align: center;">
+                <div>
+                    Mail: a-gakusai@gmail.com
+                    <br />
+                    TEL: 0242-32-0785
+                </div>
+                <Button link="#">お問い合わせForm</Button>
+            </div>
+        </Section>
+	</Base>
+	</body>
+</html>
