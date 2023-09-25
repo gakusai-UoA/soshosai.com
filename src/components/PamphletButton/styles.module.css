@@ -1,0 +1,5 @@
+.button {
+    & img {
+        height: 4rem;
+    }
+}
