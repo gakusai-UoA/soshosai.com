@@ -11,8 +11,8 @@ const Drawer = ({ opened }: Props) => {
                 <a href="/forVisitor">ご来場の方へ</a>
                 <a href="/sponsor">ご協賛</a>
                 <div className={styles.bar}>お問い合わせ</div>
-                <a href="aboutSponsor">ご協賛に関して</a>
-                <a href="contact">お問合せForm</a>
+                <a href="/aboutSponsor">ご協賛に関して</a>
+                <a href="https://forms.gle/b5rUZo4kEdD31c8m8">お問合せForm</a>
             </div>
             <div className={styles.snslinkBox}>
                 <ul>
