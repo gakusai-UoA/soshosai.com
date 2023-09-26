@@ -12,9 +12,9 @@ const Header = ({ onClick }: Props) => {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <a href="/">
-                    <img src={img.src} className={styles.logo_img} />
-                    <img src={text.src} className={styles.logo_text} />
+                <a href="/" aria-label='蒼翔祭トップページを開く'>
+                    <img src={img.src} className={styles.logo_img} alt='蒼翔祭ロゴ' />
+                    <img src={text.src} className={styles.logo_text} alt='蒼翔祭' />
                 </a>
             </div>
             <div className={styles.menu}>

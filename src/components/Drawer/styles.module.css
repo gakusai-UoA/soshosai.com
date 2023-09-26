@@ -16,6 +16,7 @@
 
 .menu[aria-hidden="true"] {
     translate: 100% 0;
+    display: none;
 }
 
 .menuBox {

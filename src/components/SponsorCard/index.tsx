@@ -11,7 +11,7 @@ const SponsorCard = ({ img, name, link }: Props) => {
     return (
         <a href={link} data-valid={!(link == null)} className={styles.card}>
             <div className={styles.image}>
-                <img src={img ?? placeholder.src}></img>
+                <img src={img ?? placeholder.src} alt={`${name}の画像`}></img>
             </div>
             <span>{name}</span>
         </a>

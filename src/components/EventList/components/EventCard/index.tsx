@@ -32,7 +32,7 @@ const EventCard = ({ children, type }: Props) => {
 
     return (
         <div className={styles.event}>
-            <img src={images[type].src} />
+            <img src={images[type].src} alt={type} />
             <div className={styles.info} data-type={type}>
                 {children}
             </div>

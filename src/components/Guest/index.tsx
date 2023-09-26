@@ -15,7 +15,7 @@ const Guest = ({ img, name, children }: Props) => {
 
     return (
         <div className={styles.guest}>
-            <img src={img}></img>
+            <img src={img} alt={`${name}の画像`}></img>
             <div className={styles.text}>
                 <h1>{name}</h1>
                 <div className={styles.info}>{children}</div>
