@@ -1,0 +1,21 @@
+.wrapper {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.x {
+    background-color: #000;
+}
+
+.insta {
+    background-color: #ff0069;
+}
+
+.img {
+    width: 50%;
+    height: fit-content;
+}
