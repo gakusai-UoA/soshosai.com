@@ -1,0 +1,11 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 100vw;
+
+}
+
+@media screen and (min-width: 880px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+    }
+}
