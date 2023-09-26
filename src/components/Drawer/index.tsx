@@ -1,6 +1,5 @@
 import styles from './styles.module.css';
-import x from './images/x.svg';
-import insta from './images/insta.svg';
+import SnsIcon from '../SnsIcon';
 
 type Props = { opened: boolean };
 
@@ -19,12 +18,16 @@ const Drawer = ({ opened }: Props) => {
                 <ul>
                     <li>
                         <a href="https://x.com/soshosai" target="_blank">
-                            <img src={x.src} className={styles.x}></img>
+                            <span className={styles.icon}>
+                                <SnsIcon type='x' />
+                            </span>
                         </a>
                     </li>
                     <li>
                         <a href="https://instagram.com/uoa.gakuensai/" target="_blank">
-                            <img src={insta.src} className={styles.insta}></img>
+                            <span className={styles.icon}>
+                                <SnsIcon type='insta' />
+                            </span>
                         </a>
                     </li>
                 </ul>
