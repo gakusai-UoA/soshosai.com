@@ -12,7 +12,7 @@ const Drawer = ({ opened }: Props) => {
                 <a href="/sponsor">ご協賛</a>
                 <div className={styles.bar}>お問い合わせ</div>
                 <a href="/aboutSponsor">ご協賛に関して</a>
-                <a href="https://forms.gle/b5rUZo4kEdD31c8m8">お問合せForm</a>
+                <a href="https://forms.gle/b5rUZo4kEdD31c8m8">お問い合わせForm</a>
             </div>
             <div className={styles.snslinkBox}>
                 <ul>
