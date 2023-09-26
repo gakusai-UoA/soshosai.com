@@ -11,8 +11,8 @@ body {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 880px) {
     .main {
-        width: 800px;
+        width: 700px;
     }
 }

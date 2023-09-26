@@ -1,15 +1,16 @@
+import React from "react";
 import styles from "./styles.module.css";
 
 type Props = {
     children: React.ReactNode,
 };
 
-const Base = ({ children }: Props) => {
+const Column = ({ children }: Props) => {
     return (
-        <div className={styles.main}>
+        <div className={styles.wrapper}>
             {children}
         </div>
     );
 };
 
-export default Base;
+export default Column;

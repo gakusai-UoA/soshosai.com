@@ -13,7 +13,7 @@
     top: calc(6vw + 1vh);
     left: 1vh;
     height: calc(98vh - 6vw);
-    width: 26vw;
+    width: 100%;
     background-color: #3EA6A7;
     border-radius: 30px;
     display: none;
