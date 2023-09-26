@@ -102,4 +102,10 @@
     border-radius: 15px;
     width: 80%;
     margin-bottom: calc(6vw * var(--k));
+    padding: 12px;
+    box-sizing: border-box;
+
+    & div {
+        margin: 1rem 0;
+    }
 }
