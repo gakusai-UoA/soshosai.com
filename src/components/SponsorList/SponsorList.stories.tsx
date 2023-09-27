@@ -13,10 +13,10 @@ export const Default = {
         children:
             <>
                 <SponsorCard name="Hoge"></SponsorCard>
+                <SponsorCard name="Hoge" link='#'></SponsorCard>
                 <SponsorCard name="Hoge"></SponsorCard>
                 <SponsorCard name="Hoge"></SponsorCard>
-                <SponsorCard name="Hoge"></SponsorCard>
-                <SponsorCard name="Hoge"></SponsorCard>
+                <SponsorCard name="Hoge" link='#'></SponsorCard>
                 <SponsorCard name="Hoge"></SponsorCard>
             </>,
     },
