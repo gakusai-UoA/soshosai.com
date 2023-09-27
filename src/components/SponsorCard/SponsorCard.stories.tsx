@@ -10,7 +10,7 @@ export default meta;
 export const Valid = {
     render: () => (
         <div style={{ width: '300px', }}>
-            <SponsorCard name='Hoge hoge' link='#' />
+            <SponsorCard link='#'>Hoge Hoge</SponsorCard>
         </div>
     ),
 };
@@ -18,7 +18,7 @@ export const Valid = {
 export const Invalid = {
     render: () => (
         <div style={{ width: '300px', }}>
-            <SponsorCard name='Hoge hoge' />
+            <SponsorCard>Hoge Hoge</SponsorCard>
         </div>
     ),
 };
