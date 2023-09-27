@@ -1,14 +1,14 @@
 import styles from './styles.module.css';
 
 type Props = {
-    name: string,
+    children: React.ReactNode,
     link?: string,
 };
 
-const SponsorCard = ({ name, link }: Props) => {
+const SponsorCard = ({ children, link }: Props) => {
     return (
         <a href={link} data-valid={!(link == null)} className={styles.card}>
-            {name}
+            {children}
         </a>
     );
 };

@@ -10,17 +10,12 @@
 .list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
     gap: 10px;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 880px) {
     .list {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (min-width: 750px) {
-    .list {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
