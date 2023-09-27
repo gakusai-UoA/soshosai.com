@@ -1,4 +1,9 @@
 ---
+import Layout from '../layouts/Layout.astro';
+
+import Column from '../layouts/Column';
+import Base from '../layouts/Base';
+import TopView from "../components/TopView";
 import About from "../components/About";
 import Theme from "../components/Theme";
 import GuestList from "../components/GuestList";
@@ -8,70 +13,50 @@ import EventList from "../components/EventList";
 import EventCard from "../components/EventList/components/EventCard";
 import PamphletButton from "../components/PamphletButton";
 import Sns from "../components/Sns";
-import TopView from "../components/TopView";
-import HeaderDrawer from '../components/HeaderDrawer';
 import SideMenu, * as Menu from '../components/SideMenu';
-import Column from '../layouts/Column';
-import Base from '../layouts/Base';
-import Footer from '../components/Footer';
-
-import '../common.css';
-import Font from '../font.html';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<Font />
-	</head>
-	<body>
-		<HeaderDrawer client:load/>
-		<TopView />
-		<Column>
-			<SideMenu client:media="(min-width: 880px)" />
-			<Base>
-				<Menu.Contents>
-					<Menu.Anchor id="about" name="蒼翔祭とは？"/>
-					<About></About>
+<Layout title="TOP | 蒼翔祭">
+	<TopView />
+	<Column>
+		<SideMenu client:media="(min-width: 880px)" />
+		<Base>
+			<Menu.Contents>
+				<Menu.Anchor id="about" name="蒼翔祭とは？"/>
+				<About></About>
 
-					<Menu.Anchor id="theme" name="今年度テーマ"/>
-					<Theme></Theme>
+				<Menu.Anchor id="theme" name="今年度テーマ"/>
+				<Theme></Theme>
 
-					<Menu.Anchor id="guest" name="スペシャルゲスト"/>
-					<GuestList>
-						<Guest name="hogehoge">
-							hogehoge hogehoge
-						</Guest>
-						<Guest name="hogehoge">
-							hogehoge hogehoge
-						</Guest>
-					</GuestList>
+				<Menu.Anchor id="guest" name="スペシャルゲスト"/>
+				<GuestList>
+					<Guest name="hogehoge">
+						hogehoge hogehoge
+					</Guest>
+					<Guest name="hogehoge">
+						hogehoge hogehoge
+					</Guest>
+				</GuestList>
 
-					<Menu.Anchor id="map" name="会場マップ"/>
-					<Map></Map>	
+				<Menu.Anchor id="map" name="会場マップ"/>
+				<Map></Map>	
 
-					<Menu.Anchor id="events" name="開催イベント"/>
-					<EventList>
-							<EventCard type="stage">A</EventCard>
-							<EventCard type="shop">B</EventCard>
-							<EventCard type="company">C</EventCard>
-							<EventCard type="exhibit">D</EventCard>
-							<EventCard type="kids">E</EventCard>
-							<EventCard type="gakusaiEvents">F</EventCard>
-					</EventList>
+				<Menu.Anchor id="events" name="開催イベント"/>
+				<EventList>
+						<EventCard type="stage">A</EventCard>
+						<EventCard type="shop">B</EventCard>
+						<EventCard type="company">C</EventCard>
+						<EventCard type="exhibit">D</EventCard>
+						<EventCard type="kids">E</EventCard>
+						<EventCard type="gakusaiEvents">F</EventCard>
+				</EventList>
 
-					<Menu.Anchor id="pamphlet" name="パンフレット"/>
-					<PamphletButton invalid={false} link="#"></PamphletButton>
-					
-					<Menu.Anchor id="sns" name="最新情報"/>
-					<Sns></Sns>
-				</Menu.Contents>
-			</Base>
-		</Column>
-		<Footer />
-	</body>
-</html>
+				<Menu.Anchor id="pamphlet" name="パンフレット"/>
+				<PamphletButton invalid={false} link="#"></PamphletButton>
+				
+				<Menu.Anchor id="sns" name="最新情報"/>
+				<Sns></Sns>
+			</Menu.Contents>
+		</Base>
+	</Column>
+</Layout>

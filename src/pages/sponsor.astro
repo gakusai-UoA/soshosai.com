@@ -1,27 +1,14 @@
 ---
-import Base from "../layouts/Base";
+import Layout from "../layouts/Layout.astro";
 
+import Base from "../layouts/Base";
 import Title from '../components/Title';
 import Info from '../components/Info';
 import SponsorList from '../components/SponsorList';
 import SponsorCard from '../components/SponsorCard';
-import HeaderDrawer from '../components/HeaderDrawer';
-import Footer from "../components/Footer";
-
-import '../common.css';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
+<Layout title="ご協賛企業紹介 | 蒼翔祭">
 	<Base>
-		<HeaderDrawer client:load/>
 		<div style="height: 10vh;" />
 		<div style="width: 100%;">
 			<Title>協賛企業紹介</Title>
@@ -44,6 +31,4 @@ import '../common.css';
             <SponsorCard name="企業名"/>
         </SponsorList>
 	</Base>
-	<Footer />
-	</body>
-</html>
+</Layout>
