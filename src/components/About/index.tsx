@@ -1,10 +1,10 @@
-import image from './images/slide_1.jpg';
+import image from './images/slide_1.webp';
 import styles from './styles.module.css';
 
 const About = () => {
     return (
         <div className={styles.about}>
-            <img src={image.src} />
+            <img src={image.src} alt="過去の蒼翔祭の様子" />
             <div className={styles.aboutBox}>
                 <h1>蒼翔祭とは？</h1>
                 <p>

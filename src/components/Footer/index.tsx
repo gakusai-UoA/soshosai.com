@@ -12,15 +12,15 @@ const Footer = () => {
                 <li><a href="#">お問い合わせForm</a></li>
                 <li><a href="/sponsor">協賛企業様紹介</a></li>
             </ul>
-            <a href='https://u-aizu.ac.jp/' className={styles.uoaLogo}>
-                <img src={uoa_logo.src}></img>
+            <a href='https://u-aizu.ac.jp/' className={styles.uoaLogo} aria-label='会津大学の公式サイトを開く'>
+                <img src={uoa_logo.src} alt='会津大学のロゴ'></img>
             </a>
             <div className={styles.sns}>
-                <a href="https://x.com/soshosai" className={styles.x}>
-                    <img src={x.src}></img>
+                <a href="https://x.com/soshosai" className={styles.x} aria-label='@soshosai'>
+                    <img src={x.src} alt='xアイコン'></img>
                 </a>
-                <a href="https://www.instagram.com/uoa.gakuensai/" className={styles.insta}>
-                    <img src={insta.src}></img>
+                <a href="https://www.instagram.com/uoa.gakuensai/" className={styles.insta} aria-label='uoa.gakuensai'>
+                    <img src={insta.src} alt='instagramアイコン'></img>
                 </a>
             </div>
             <div className={styles.credit}>

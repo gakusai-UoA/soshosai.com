@@ -6,7 +6,7 @@
 
     & img {
         width: 130px;
-        aspect-ratio: 3 / 2;
+        aspect-ratio: 400 / 256;
         border-radius: 6px;
         border: 3px solid #43B8BA;
         position: absolute;

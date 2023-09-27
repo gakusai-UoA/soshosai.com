@@ -12,9 +12,9 @@ const Hamburger = ({ onClick }: Props) => {
         setExpanded(expanded => !expanded);
     };
     return (
-        <button type="button" className={styles.button} aria-expanded={expanded} onClick={toggle}>
-            <img src={on.src} className={styles.on}></img>
-            <img src={off.src} className={styles.off}></img>
+        <button type="button" className={styles.button} aria-expanded={expanded} onClick={toggle} aria-label='メニューを開く'>
+            <img src={on.src} className={styles.on} alt=''></img>
+            <img src={off.src} className={styles.off} alt=''></img>
         </button>
     );
 };

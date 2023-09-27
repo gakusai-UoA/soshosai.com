@@ -9,9 +9,9 @@ type Props = {
 
 const PamphletButton = ({ invalid, link }: Props) => {
     return (
-        <a href={link} className={styles.button}>
+        <a href={link} className={styles.button} aria-label='パンフレットをダウンロードする'>
             {/* そのうちテキストにする */}
-            <img src={invalid ? invalid_btn.src : valid_btn.src}></img>
+            <img src={invalid ? invalid_btn.src : valid_btn.src} alt=''></img>
         </a>
     );
 };

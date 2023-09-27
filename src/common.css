@@ -1,9 +1,3 @@
-/*
-fontの読み込み本当はしたくない
-700だけでもsvgに置き換える？
-*/
-@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap");
-
 :root {
     font-family: "Zen Maru Gothic", sans-serif;
 }
