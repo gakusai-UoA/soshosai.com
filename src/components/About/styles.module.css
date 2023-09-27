@@ -1,8 +1,10 @@
 .about {
     margin: 60px auto 0 auto;
     padding-right: 80px;
+    padding-left: 40px;
     position: relative;
-    width: 70%;
+    width: 100%;
+    box-sizing: border-box;
 
     & img {
         width: 130px;
@@ -11,7 +13,7 @@
         border: 3px solid #43B8BA;
         position: absolute;
         top: -40px;
-        right: 0;
+        right: 5px;
         z-index: 10;
         rotate: -7deg;
     }

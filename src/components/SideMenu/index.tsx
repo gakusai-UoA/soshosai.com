@@ -21,7 +21,9 @@ const SideMenu = () => {
     }, []);
 
     return (
-        <nav className={styles.toc} />
+        <div className={styles.wrapper}>
+            <nav className={styles.toc} />
+        </div>
     );
 };
 
