@@ -1,7 +1,6 @@
 import styles from './styles.module.css';
 import uoa_logo from './images/uoa_logo.jpg';
-import x from './images/x_icon.svg';
-import insta from './images/insta_icon.svg';
+import SnsIcon from '../SnsIcon';
 
 const Footer = () => {
     return (
@@ -16,11 +15,11 @@ const Footer = () => {
                 <img src={uoa_logo.src} alt='会津大学のロゴ'></img>
             </a>
             <div className={styles.sns}>
-                <a href="https://x.com/soshosai" className={styles.x} aria-label='@soshosai'>
-                    <img src={x.src} alt='xアイコン'></img>
+                <a href="https://x.com/soshosai" className={styles.icon} aria-label='@soshosai'>
+                    <SnsIcon type='x' />
                 </a>
-                <a href="https://www.instagram.com/uoa.gakuensai/" className={styles.insta} aria-label='uoa.gakuensai'>
-                    <img src={insta.src} alt='instagramアイコン'></img>
+                <a href="https://www.instagram.com/uoa.gakuensai/" className={styles.icon} aria-label='uoa.gakuensai'>
+                    <SnsIcon type='insta' />
                 </a>
             </div>
             <div className={styles.credit}>

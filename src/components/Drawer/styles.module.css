@@ -70,17 +70,6 @@
     }
 }
 
-.x,
-.insta {
-    width: 6vw;
-    aspect-ratio: 1;
-    padding: 6px;
-}
-
-.x {
-    background-color: black;
-}
-
-.insta {
-    background-color: purple;
+.icon {
+    width: 12vw;
 }

@@ -1,7 +1,6 @@
 import styles from './styles.module.css';
 import follow_us from './images/follow_us.svg';
-import x from './images/x_icon.svg';
-import insta from './images/insta_icon.svg';
+import SnsIcon from '../SnsIcon';
 
 const Sns = () => {
     return (
@@ -14,11 +13,15 @@ const Sns = () => {
             </div>
             <div className={styles.links}>
                 <a href="https://x.com/soshosai" className={styles.x}>
-                    <img src={x.src} alt='xアイコン'></img>
+                    <span className={styles.icon}>
+                        <SnsIcon type='x' />
+                    </span>
                     <span className={styles.address}>@soshosai</span>
                 </a>
                 <a href="https://www.instagram.com/uoa.gakuensai/" className={styles.insta}>
-                    <img src={insta.src} alt='instagramアイコン'></img>
+                    <span className={styles.icon}>
+                        <SnsIcon type='insta' />
+                    </span>
                     <span className={styles.address}>uoa.gakuensai</span>
                 </a>
             </div>

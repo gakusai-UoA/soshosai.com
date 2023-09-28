@@ -20,10 +20,11 @@
 .message {
     grid-area: 3 / 1 / 5 / 2;
     transform: skewY(-6deg) rotate(6deg);
-    width: 60%;
+    width: 90%;
     margin-bottom: 10%;
     color: white;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .links {
@@ -32,24 +33,16 @@
     rotate: 6deg;
 }
 
-.x img {
-    background-color: black;
-}
-
-.insta img {
-    background-color: purple;
-}
-
 .x,
 .insta {
     display: inline-block;
     width: 100%;
+}
 
-    & img {
-        width: 30px;
-        padding: 5px;
-        border-radius: 3px;
-    }
+.icon {
+    display: inline-block;
+    width: 15%;
+    margin: 10px;
 }
 
 .address {
