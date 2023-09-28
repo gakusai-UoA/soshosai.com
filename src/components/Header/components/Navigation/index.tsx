@@ -20,7 +20,7 @@ const Navigation = () => {
                     <div className={styles.dropdown_title}>お問い合わせ</div>
                     <ul>
                         <li><a href="/aboutSponsor">ご協賛に関して</a></li>
-                        <li><a href="/contact">お問い合わせForm</a></li>
+                        <li><a href="https://forms.gle/b5rUZo4kEdD31c8m8">お問い合わせForm</a></li>
                     </ul>
                 </div>
             </nav>

@@ -8,7 +8,7 @@ const Footer = () => {
             <ul className={styles.nav}>
                 <li><a href="/forVisitor">ご来場の方へ</a></li>
                 <li><a href="/aboutSponsor">ご協賛に関して</a></li>
-                <li><a href="#">お問い合わせForm</a></li>
+                <li><a href="https://forms.gle/b5rUZo4kEdD31c8m8">お問い合わせForm</a></li>
                 <li><a href="/sponsor">協賛企業様紹介</a></li>
             </ul>
             <a href='https://u-aizu.ac.jp/' className={styles.uoaLogo} aria-label='会津大学の公式サイトを開く'>
