@@ -14,10 +14,17 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700&display=swap&text=会場マップ開催イベント" rel="stylesheet" />
+
+		<meta property="og:title" content={title} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:image" content={new URL('/ogpImage.png', Astro.url)} />
+		<meta property="og:description" content="蒼翔祭公式サイトです！" />
 	</head>
 	<body>
         <HeaderDrawer client:load/>
