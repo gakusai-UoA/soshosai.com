@@ -8,14 +8,17 @@ const meta: Meta<typeof SponsorCard> = {
 export default meta;
 
 export const Valid = {
-    args: {
-        name: 'Hoge Hoge',
-        link: '#',
-    },
+    render: () => (
+        <div style={{ width: '300px', }}>
+            <SponsorCard link='#'>Hoge Hoge</SponsorCard>
+        </div>
+    ),
 };
 
 export const Invalid = {
-    args: {
-        name: 'Hoge Hoge',
-    },
+    render: () => (
+        <div style={{ width: '300px', }}>
+            <SponsorCard>Hoge Hoge</SponsorCard>
+        </div>
+    ),
 };

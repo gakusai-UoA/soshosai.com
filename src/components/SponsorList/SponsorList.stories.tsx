@@ -12,12 +12,13 @@ export const Default = {
     args: {
         children:
             <>
-                <SponsorCard name="Hoge"></SponsorCard>
-                <SponsorCard name="Hoge"></SponsorCard>
-                <SponsorCard name="Hoge"></SponsorCard>
-                <SponsorCard name="Hoge"></SponsorCard>
-                <SponsorCard name="Hoge"></SponsorCard>
-                <SponsorCard name="Hoge"></SponsorCard>
+                <SponsorCard link='#'>Hoge Hoge</SponsorCard>
+                <SponsorCard link='#'>Hoge Hoge</SponsorCard>
+                <SponsorCard>Hoge Hoge</SponsorCard>
+                <SponsorCard link='#'>Hoge Hoge</SponsorCard>
+                <SponsorCard>Hoge Hoge</SponsorCard>
+                <SponsorCard>Hoge Hoge</SponsorCard>
+                <SponsorCard link='#'>Hoge Hoge</SponsorCard>
             </>,
     },
 };
