@@ -14,6 +14,9 @@ import EventCard from "../components/EventList/components/EventCard";
 import PamphletButton from "../components/PamphletButton";
 import Sns from "../components/Sns";
 import SideMenu, * as Menu from '../components/SideMenu';
+
+import gag from '../images/gag.jpg';	
+import mc from '../images/mikumikucider.jpg';
 ---
 
 <Layout title="TOP | 蒼翔祭">
@@ -30,11 +33,14 @@ import SideMenu, * as Menu from '../components/SideMenu';
 
 				<Menu.Anchor id="guest" name="スペシャルゲスト"/>
 				<GuestList>
-					<Guest name="hogehoge">
-						hogehoge hogehoge
+					<Guest name="GAG" img={gag.src}>
+						2015年ABCお笑いグランプリ優勝<br />
+						2017～2020 キングオブコントファイナリスト<br />
 					</Guest>
-					<Guest name="hogehoge">
-						hogehoge hogehoge
+					<Guest name="ミクミクサイダー" img={mc.src}>
+						2018年 ザ・細かすぎて伝わらないモノマネ2018 - 準優勝<br />
+						2021年 第9回歌ネタ王決定戦 - 決勝進出<br />
+						2022年 キングオブコント2022 - 準々決勝進出<br />
 					</Guest>
 				</GuestList>
 
