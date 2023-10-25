@@ -24,18 +24,14 @@ const images: Images = {
 };
 
 type Props = {
-    children: React.ReactNode,
     type: EventType,
 };
 
-const EventCard = ({ children, type }: Props) => {
+const EventCard = ({ type }: Props) => {
 
     return (
         <div className={styles.event}>
             <img src={images[type].src} alt={type} />
-            <div className={styles.info} data-type={type}>
-                {children}
-            </div>
         </div>
     );
 };
