@@ -1,7 +1,6 @@
 .wrapper {
     width: 100%;
-    height: auto;
-    aspect-ratio: 1;
+    padding: 25% 0;
     display: flex;
     justify-content: center;
     align-items: center;
