@@ -1,4 +1,4 @@
-import map from './images/map.jpg';
+import map from './images/map.png';
 import styles from './styles.module.css';
 
 const Map = () => {
